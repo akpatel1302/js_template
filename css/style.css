@@ -1,0 +1,186 @@
+  /* *{
+      font-family: ;
+  } */
+
+.container{
+    border: 1px solid #337AB7;
+    padding: 0px 0px;
+    margin: 15px;
+    border-radius: 5px;
+  
+
+}
+button{
+    background-color: #327AB7;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 82px;   
+}
+
+
+button:hover{
+  background-color: #163149;
+}
+
+.header{
+ background: #327AB7;
+ color: white;
+ 
+}
+div p{
+    height: 20px;
+    padding: 4px;
+    margin: 0px 1px;
+}
+
+table {
+    width: 100%;
+    padding: 0px 20px;
+    border:  1px solid #327AB7;
+    border-collapse: collapse;
+  }
+  
+  th , td {
+    height: auto;
+    padding: 0px 8px;
+    border: 1px solid rgba(160, 159, 159, 0.507);
+    text-align: left;   
+  }
+ 
+  thead tr{
+    height: 40px;
+  }
+  th{
+    border-bottom: 1px solid grey;
+  }
+  .table-items{
+    padding: 10px 10px;
+  }
+
+
+
+  input[type=text] , 
+  input[type=number],
+  input[type=date],
+  input[type=email] {
+    /* width: 70%; */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  div.content-items{
+    width: 96%;
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    margin: 1rem;
+  }
+
+
+  .hobby-items{
+    display: grid;
+    grid-template-columns: 0fr 0fr;
+    column-gap: 5px;
+  }
+
+  button.editBtn{
+    background: forestgreen;
+  }
+  button.deleteBtn{
+    background-color: red;
+  }
+
+  span{
+    color: red;
+  }
+
+  .alert{
+    /* visibility: hidden; */
+    display: none;
+  }
+
+
+  .warning{
+    border: 2px solid red !important;
+  }
+
+  /* div.content-ite{
+    width: 96%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    margin: 1rem;
+    padding-bottom: 42px;
+  } */
+
+/* #submitBtn{
+  position: absolute;
+  left: 112px;
+} */
+
+#resetBtn{
+  /* position: absolute; */
+  /* left: 210px; */
+  visibility: hidden;
+}
+
+.form-control {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  /*padding: 0 15px;*/
+}
+
+.form-span{
+  margin-bottom: 2px;
+  padding: 1px;
+}
+
+.form-control > .form-title {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.form-control > .form-title > label {
+  padding-right: 40px;
+}
+
+
+.form-control > .form-input {
+  width: 85%;
+  display: flex;
+  align-items: center;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.card {
+  border: 1px solid #337AB7;
+  border-radius: 5px;
+
+}
+
+.card-header {
+  background: #327AB7;
+  color: white;
+  padding: 10px 15px;
+}
+
+.card-body {
+  padding: 10px 15px;
+}
+
+.table-control{
+  margin-top: 40px;
+}

@@ -6,9 +6,256 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+  <form id="employeeForm" name="employeeForm">
+  <div class="card">
+    <div class="card-header">
+      Add Employees
+    </div>
+    <div class="card-body">
+
+      <!-- Name -->
+      <div class="form-control">
+        <div class="form-title">
+          <label for="name"><b>Name :</b><span>*</span></label>
+        </div>
+        <div class="form-input">
+          <input type="text" id="name" placeholder="Enter name" class="w-100" name="name" class="name" >
+          <!-- <div class="error-container">
+            <span id="alert-name" class="alert name"></span>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="form-control form-span">
+        <div class="form-title">
+        </div>
+        <div class="form-input">
+          <div class="error-container">
+            <span id="alert-name" class="alert name"></span>
+          </div>
+        </div>
+      </div>
+      <!-- gender -->
+      <div class="form-control">
+        <div class="form-title">
+          <label for="dob"><b>Date of birth :</b><span>*</span></label>
+        </div>
+        <div class="form-input">
+          <input type="radio" id="male" class="gender" name="gender" value="Male" checked >
+          <label for="male">Male</label>
+          <input type="radio" id="female" class="gender" name="gender" value="Female">
+          <label for="female">Female</label>
+          <div class="error-container">
+            <span id="alert-name" class="alert name"></span>
+          </div>
+        </div>
+      </div>
+      <!-- dob -->
+      <div class="form-control">
+        <div class="form-title">
+          <label for="gender"><b>Gender :</b><span>*</span></label>
+        </div>
+        <div class="form-input">
+          <input type="date" id="dob" name="dob"  max="2024-02-10" class="w-100" class="" onfocus="showPicker()" >
+          <div class="error-container">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-control form-span">
+        <div class="form-title">
+        </div>
+        <div class="form-input">
+          <div class="error-container">
+            <span id="alert-date" class="alert date"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- email -->
+      <div class="form-control">
+        <div class="form-title">
+          <label for="email"><b>Email :</b><span>*</span></label>
+        </div>
+        <div class="form-input">
+          <input type="email" id="email" name="email" class="w-100" placeholder="Enter email" class="" >
+          <div class="error-container">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-control form-span">
+        <div class="form-title">
+        </div>
+        <div class="form-input">
+          <div class="error-container">
+            <span id="alert-email" class="alert email"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- phone -->
+      <div class="form-control">
+        <div class="form-title">
+          <label for="phone"><b>Phone :</b></label>
+        </div>
+        <div class="form-input">
+          <input type="number" id="phone" name="phone" class="w-100" placeholder="Enter Phone" pattern="/(7|8|9)\d{9}/" class="">
+        </div>
+      </div>
+
+      <!-- hobbies -->
+      <div class="form-control">
+        <div class="form-title">
+          <label for="hobbies"><b>Hobbies :</b></label>
+        </div>
+        <div class="form-input">
+          <div class="hobby-items">
+
+            <input type="checkbox" id="Cricket" name="hobbies" class="" value="Cricket">
+            <label for="Cricket">Cricket</label>
+            <input type="checkbox" id="Chess" name="hobbies" class="" value="Chess">
+            <label for="Chess">Chess</label>
+            <input type="checkbox" id="Music" name="hobbies" class="" value="Music">
+            <label for="Music">Music</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Buttons submit-reset -->
+      <div class="form-control">
+        <div class="form-title">
+          
+        </div>
+        <div class="form-input">
+          <button class="content-ite" id="submitBtn" type="submit">Submit</button>
+          <button type="reset" id="resetBtn" value="Cancel" onclick="employeeForm.reset()">Cancel</button>
+        </div>
+      </div>
+
+      <!-- hidden -->
+      <input type="hidden" id="employeeIndex" class="employeeIndex">
+    </div>
+  </div>
+  
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <form id="employeeForm" name="employeeForm">
+    <div class="container">
+      <div class="header">
+        <p>Add Employees</p>
+      </div>
+      <div class="content">
+      <div class="content-items">
+        <label for="name"><b>Name :</b><span>*</span></label>
+        <input type="text" id="name" placeholder="Enter name" class="" name="name" class="name" >
+        <span></span><span id="alert-name" class="alert name"></span>
+      </div>
+      <div class="content-items">
+        <label for="gender"><b>Gender :</b><span>*</span></label>
+        <div>
+          <input type="radio" id="male" class="gender" name="gender" value="Male" checked >
+          <label for="male">Male</label>
+          <input type="radio" id="female" class="gender" name="gender" value="Female">
+          <label for="female">Female</label>
+        </div>
+      </div>
+      <div class="content-items">
+        <label for="dob"><b>Date of birth :</b><span>*</span></label>
+        <input type="date" id="dob" name="dob"  max="2024-02-07" class="" onfocus="showPicker()" >
+        <span></span><span id="alert-date" class="alert date"></span>
+      </div>
+      <div class="content-items">
+        <label for="email"><b>Email :</b><span>*</span></label>
+        <input type="email" id="email" name="email" placeholder="Enter email" class="" >
+        <span></span><span id="alert-email" class="alert email"></span>
+      </div>
+      <div class="content-items">
+        <label for="phone"><b>Phone :</b></label>
+        <input type="number" id="phone" name="phone" placeholder="Enter Phone" pattern="/(7|8|9)\d{9}/" class="">
+      </div>
+      <div class="content-items">
+        <label for="hobbies"><b>Hobbies :</b></label>
+        <div class="hobby-items">
+          <input type="checkbox" id="Cricket" name="hobbies" class="" value="Cricket">
+          <label for="Cricket">Cricket</label>
+          <input type="checkbox" id="Chess" name="hobbies" class="" value="Chess">
+          <label for="Chess">Chess</label>
+          <input type="checkbox" id="Music" name="hobbies" class="" value="Music">
+          <label for="Music">Music</label>
+        </div>
+      </div>
+      <input type="hidden" id="employeeIndex" class="employeeIndex" value="">
+      <div class="content-ite">
+       <button class="content-ite" id="submitBtn" type="submit">Submit</button>
+        <button type="reset" id="resetBtn" value="Cancel" onclick="employeeForm.reset()">Cancel</button>
+       
+      </div>
+
+    </div>
+    </div>
+
+  </form> -->
+
+  <!-- -----------------------------------------display---------------------------------------------- -->
+  
+<!--   
+    <div class="form-title">
+      <label for="name"><b>Name :</b><span>*</span></label>
+    </div>
+    <div class="form-input">
+      <input type="text" id="name" placeholder="Enter name" class="w-100" name="name" class="name" >
+      <div class="error-container">
+        <span id="alert-name" class="alert name"></span>
+      </div>
+    </div> -->
+  
+  
+ <div class="table-control">
+  <div class="card">
+    <div class="card-header">
+        Display
+    </div>
+    <div class="table-items">
+  <table id="employeeTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>DOB</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Hobby</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+  
+    <tbody id="basicViewTableBody">
+    </tbody>
+  </table>
+  </div>
+</div>
+</div> 
   <script src='./src/main.js' type="module"></script>
 </body>
 
